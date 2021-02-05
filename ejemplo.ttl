@@ -36,7 +36,8 @@
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente
-:Componente rdf:type owl:Class .
+:Componente rdf:type owl:Class ;
+            owl:disjointWith :Vivienda .
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Motocicleta
@@ -60,14 +61,20 @@
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo
-:Vehiculo rdf:type owl:Class .
+:Vehiculo rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPart ;
+                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Rueda
+                          ] ;
+          owl:disjointWith :Vivienda .
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vivienda
 :Vivienda rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :hasPart ;
-                            owl:someValuesFrom :Puerta
+                            owl:someValuesFrom :Componente
                           ] .
 
 
@@ -84,14 +91,6 @@
   owl:members ( :Camion
                 :Motocicleta
                 :Turismo
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Componente
-                :Vehiculo
-                :Vivienda
               )
 ] .
 
