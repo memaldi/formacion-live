@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#"
+     xml:base="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Camion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Camion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vivienda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Motocicleta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Motocicleta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Puerta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Puerta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Rueda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Rueda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Turismo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Turismo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vivienda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vivienda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Volante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Volante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Componente"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Camion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Motocicleta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Turismo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Puerta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Rueda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Volante"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
