@@ -61,11 +61,21 @@
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vehiculo
-:Vehiculo rdf:type owl:Class .
+:Vehiculo rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPart ;
+                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Rueda
+                          ] ;
+          owl:disjointWith :Vivienda .
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Vivienda
-:Vivienda rdf:type owl:Class .
+:Vivienda rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPart ;
+                            owl:someValuesFrom :Componente
+                          ] .
 
 
 ###  http://www.semanticweb.org/mikel/ontologies/2021/1/untitled-ontology-43#Volante
